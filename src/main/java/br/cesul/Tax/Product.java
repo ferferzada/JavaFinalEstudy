@@ -29,6 +29,7 @@ public class Product extends SaleItem{
 
     @Override
     public Double getFinalPrice() {
-        return null;
+        var total = quantity * getPrice();
+        return total + (total * icms / 100d) + (total * ipi / 100d);
     }
 }
