@@ -29,15 +29,15 @@ public class Service extends SaleItem{
 
     @Override
     public Double getFinalPrice() {
-        var total  =  getPrice() * time;
-        if(category == ServiceCategory.STANDARD){
-            total *= 1.03;
-        }else if(category == ServiceCategory.MASTER){
-            total *=1.05;
-        }else{
-            total *=1.1;
-        }
+        var total  =  getPrice() * time * getAdicitioalFee();
          total += total * iss/100;
         return total ;
+    }
+    private Double getAdicitioalFee(){
+        return switch (category){
+            case STANDARD -> 1.03;
+            case SUPERIOR -> 1.05;
+            default -> 1.1;
+        };
     }
 }
