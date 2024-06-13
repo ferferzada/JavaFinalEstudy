@@ -1,4 +1,4 @@
-package br.cesul.Condominium;
+package br.cesul.condominium;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

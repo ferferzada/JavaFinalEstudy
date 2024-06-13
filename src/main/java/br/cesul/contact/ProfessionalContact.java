@@ -1,4 +1,4 @@
-package br.cesul.Contact;
+package br.cesul.contact;
 
 public class ProfessionalContact extends Contact {
     private final String empresa;

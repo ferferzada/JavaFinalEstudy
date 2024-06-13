@@ -1,4 +1,4 @@
-package br.cesul.Contact;
+package br.cesul.contact;
 
 public abstract class Contact {
 

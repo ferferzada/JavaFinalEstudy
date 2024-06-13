@@ -1,4 +1,4 @@
-package br.cesul.Tax;
+package br.cesul.tax;
 
 public class Product extends SaleItem{
     private Double icms;

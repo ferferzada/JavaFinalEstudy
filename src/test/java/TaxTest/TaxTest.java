@@ -1,16 +1,15 @@
 package TaxTest;
 
-import br.cesul.Condominium.Condominium;
-import br.cesul.Tax.Product;
-import br.cesul.Tax.Service;
-import br.cesul.Tax.ServiceCategory;
+import br.cesul.tax.Product;
+import br.cesul.tax.Service;
+import br.cesul.tax.ServiceCategory;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
-import java.time.Month;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TaxTest {
     @Test
+    @DisplayName("MARSELÃO SENDO VENDIDO COM IMPOSTO CERTO")
     public void getFinalPriceCorrectProduct(){
         var product = new Product("Marcelo",200D,20D,10D,3);
         assertEquals(780D,product.getFinalPrice());

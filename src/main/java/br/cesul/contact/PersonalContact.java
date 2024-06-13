@@ -1,4 +1,4 @@
-package br.cesul.Contact;
+package br.cesul.contact;
 
 public class PersonalContact extends Contact {
 
